@@ -37,7 +37,7 @@ export default function ContactPage() {
                 <div className="reach-icon">✉</div>
                 <div>
                   <h4>Email us</h4>
-                  <p className="placeholder-tag">email pending</p>
+                  <p>{contact.email}</p>
                 </div>
               </div>
               <div className="reach-item">

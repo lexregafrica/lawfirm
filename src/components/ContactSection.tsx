@@ -13,7 +13,7 @@ export default function ContactSection() {
           </div>
           <div>
             <span>Email us</span>
-            <b className="placeholder-tag">email pending</b>
+            <b>{contact.email}</b>
           </div>
         </div>
       </div>

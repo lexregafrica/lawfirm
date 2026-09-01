@@ -30,6 +30,7 @@ export default function Footer() {
             <h5>Contact</h5>
             <p>{contact.phone}</p>
             <p>{contact.phone2}</p>
+            <p>{contact.email}</p>
             <p>{contact.address}</p>
             <p>{contact.postal}</p>
           </div>

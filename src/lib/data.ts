@@ -96,6 +96,7 @@ export const faqs = [
 export const contact = {
   phone: "0788-954-272",
   phone2: "+254-722-672-690",
+  email: "adede@adedeadvocates.co.ke",
   address: "Intrade Africa Place, Ground Floor, Block B, Kauria Close, Off Muthangari Road, Lavington",
   postal: "P.O. Box 19118-00100, Nairobi",
 };
