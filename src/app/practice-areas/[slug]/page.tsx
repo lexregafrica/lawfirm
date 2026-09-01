@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
+import Reveal from "@/components/Reveal";
 import { practiceAreas } from "@/lib/data";
 
 const details: Record<
@@ -201,13 +202,16 @@ export default async function PracticeAreaDetail(props: PageProps<"/practice-are
           <Image src={area.image} alt={area.title} fill sizes="(max-width: 1024px) 100vw, 1200px" priority />
         </div>
 
+        <Reveal>
         <section className="detail-section centered">
           <h2>Overview</h2>
           {detail.overview.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
         </section>
+        </Reveal>
 
+        <Reveal>
         <section className="detail-section centered">
           <h2>What we handle</h2>
           <ul className="checklist">
@@ -216,7 +220,9 @@ export default async function PracticeAreaDetail(props: PageProps<"/practice-are
             ))}
           </ul>
         </section>
+        </Reveal>
 
+        <Reveal>
         <section className="detail-section centered">
           <h2>Detailed support areas</h2>
           <div className="support-grid">
@@ -228,14 +234,18 @@ export default async function PracticeAreaDetail(props: PageProps<"/practice-are
             ))}
           </div>
         </section>
+        </Reveal>
 
+        <Reveal>
         <section className="detail-section centered">
           <h2>Our approach</h2>
           {detail.approach.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
         </section>
+        </Reveal>
 
+        <Reveal>
         <section className="detail-section centered" style={{ paddingBottom: 60 }}>
           <h2>Why choose us</h2>
           <ul className="checklist">
@@ -244,7 +254,9 @@ export default async function PracticeAreaDetail(props: PageProps<"/practice-are
             ))}
           </ul>
         </section>
+        </Reveal>
 
+        <Reveal>
         <section className="related-section">
           <h2>Other legal services</h2>
           <div className="related-grid">
@@ -259,8 +271,11 @@ export default async function PracticeAreaDetail(props: PageProps<"/practice-are
             ))}
           </div>
         </section>
+        </Reveal>
 
-        <ContactSection />
+        <Reveal>
+          <ContactSection />
+        </Reveal>
       </main>
       <Footer />
     </>

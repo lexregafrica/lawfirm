@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CtaBanner from "@/components/CtaBanner";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "About Us — Adede & Co Advocates",
@@ -57,6 +58,7 @@ export default function AboutPage() {
           ]}
         />
 
+        <Reveal>
         <section className="detail-section centered" style={{ paddingTop: 60 }}>
           <div className="eyebrow">Who we are</div>
           <h2>
@@ -78,7 +80,9 @@ export default function AboutPage() {
             <strong style={{ color: "var(--ink)" }}>Mission:</strong> Breaking down the law for everyday use.
           </p>
         </section>
+        </Reveal>
 
+        <Reveal>
         <section className="founder-section">
           <div>
             <div className="eyebrow">Meet our founder</div>
@@ -109,7 +113,9 @@ export default function AboutPage() {
             ))}
           </div>
         </section>
+        </Reveal>
 
+        <Reveal>
         <section className="stand-for">
           <div className="eyebrow" style={{ justifyContent: "center" }}>
             What we stand for
@@ -141,12 +147,15 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+        </Reveal>
 
+        <Reveal>
         <CtaBanner
           image="/images/cta-library.jpg"
           title="Begin your journey to resolution with us"
           subtitle="Tell us about your situation and we'll connect you with the right advocate — no obligation, fully confidential."
         />
+        </Reveal>
       </main>
       <Footer />
     </>

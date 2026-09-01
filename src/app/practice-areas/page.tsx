@@ -7,6 +7,7 @@ import PageHero from "@/components/PageHero";
 import Process from "@/components/Process";
 import ContactSection from "@/components/ContactSection";
 import Faq from "@/components/Faq";
+import Reveal from "@/components/Reveal";
 import { practiceAreas } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -26,21 +27,29 @@ export default function PracticeAreasPage() {
           subtitle="Focused on results that matter. Prepared for complexity and risk. Committed to clarity and speed."
         />
 
-        <section className="practice-grid">
-          {practiceAreas.map((area) => (
-            <Link href={`/practice-areas/${area.slug}`} className="service-card" key={area.slug}>
-              <Image src={area.image} alt={area.title} fill sizes="(max-width: 1024px) 50vw, 33vw" />
-              <div className="body">
-                <h3>{area.title}</h3>
-                <p>{area.short}</p>
-              </div>
-            </Link>
-          ))}
-        </section>
+        <Reveal>
+          <section className="practice-grid">
+            {practiceAreas.map((area) => (
+              <Link href={`/practice-areas/${area.slug}`} className="service-card" key={area.slug}>
+                <Image src={area.image} alt={area.title} fill sizes="(max-width: 1024px) 50vw, 33vw" />
+                <div className="body">
+                  <h3>{area.title}</h3>
+                  <p>{area.short}</p>
+                </div>
+              </Link>
+            ))}
+          </section>
+        </Reveal>
 
-        <Process />
-        <ContactSection />
-        <Faq />
+        <Reveal>
+          <Process />
+        </Reveal>
+        <Reveal>
+          <ContactSection />
+        </Reveal>
+        <Reveal>
+          <Faq />
+        </Reveal>
       </main>
       <Footer />
     </>

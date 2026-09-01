@@ -10,6 +10,7 @@ import ValuesSection from "@/components/ValuesSection";
 import Process from "@/components/Process";
 import ContactSection from "@/components/ContactSection";
 import Faq from "@/components/Faq";
+import Reveal from "@/components/Reveal";
 
 export default function Home() {
   return (
@@ -17,15 +18,33 @@ export default function Home() {
       <Header active="/" />
       <main className="wrap">
         <Hero />
-        <ServiceTeaser />
-        <AreasFocus />
-        <Justice />
-        <Testimonials />
-        <AboutFirm />
-        <ValuesSection />
-        <Process />
-        <ContactSection />
-        <Faq />
+        <Reveal>
+          <ServiceTeaser />
+        </Reveal>
+        <Reveal>
+          <AreasFocus />
+        </Reveal>
+        <Reveal>
+          <Justice />
+        </Reveal>
+        <Reveal>
+          <Testimonials />
+        </Reveal>
+        <Reveal>
+          <AboutFirm />
+        </Reveal>
+        <Reveal>
+          <ValuesSection />
+        </Reveal>
+        <Reveal>
+          <Process />
+        </Reveal>
+        <Reveal>
+          <ContactSection />
+        </Reveal>
+        <Reveal>
+          <Faq />
+        </Reveal>
       </main>
       <Footer />
     </>

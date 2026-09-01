@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
+import Reveal from "@/components/Reveal";
 import { contact } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function ContactPage() {
           <h1>Let&apos;s start a conversation</h1>
         </section>
 
+        <Reveal>
         <section className="contact-page-section">
           <div>
             <div className="eyebrow">Reach us directly</div>
@@ -54,25 +56,28 @@ export default function ContactPage() {
             <div className="eyebrow">Response guaranteed within 1 business day</div>
             <div className="contact-form">
               <h3>Book a consultation</h3>
-              <form>
+              <form action={`https://formsubmit.co/${contact.email}`} method="POST">
+                <input type="hidden" name="_subject" value="New consultation request — Adede & Co website" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
                 <div className="form-row">
                   <div className="field">
                     <label htmlFor="fullName">Full name*</label>
-                    <input id="fullName" name="fullName" placeholder="Enter your full name" required />
+                    <input id="fullName" name="Full name" placeholder="Enter your full name" required />
                   </div>
                   <div className="field">
                     <label htmlFor="email">Email address*</label>
-                    <input id="email" name="email" type="email" placeholder="you@email.com" required />
+                    <input id="email" name="Email address" type="email" placeholder="you@email.com" required />
                   </div>
                 </div>
                 <div className="form-row">
                   <div className="field">
                     <label htmlFor="phone">Phone number</label>
-                    <input id="phone" name="phone" placeholder="Your contact number" />
+                    <input id="phone" name="Phone number" placeholder="Your contact number" />
                   </div>
                   <div className="field">
                     <label htmlFor="service">Service needed*</label>
-                    <select id="service" name="service" required defaultValue="">
+                    <select id="service" name="Service needed" required defaultValue="">
                       <option value="" disabled>
                         Select a service
                       </option>
@@ -89,7 +94,7 @@ export default function ContactPage() {
                 </div>
                 <div className="field" style={{ marginBottom: 20 }}>
                   <label htmlFor="message">Message</label>
-                  <textarea id="message" name="message" placeholder="Write your message here..." />
+                  <textarea id="message" name="Message" placeholder="Write your message here..." />
                 </div>
                 <button type="submit" className="btn" style={{ width: "100%", justifyContent: "center" }}>
                   Send Message
@@ -98,8 +103,11 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
+        </Reveal>
 
-        <Faq />
+        <Reveal>
+          <Faq />
+        </Reveal>
       </main>
       <Footer />
     </>

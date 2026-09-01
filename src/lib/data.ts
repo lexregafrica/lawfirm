@@ -87,10 +87,22 @@ export const faqs = [
     q: "How can I schedule a consultation?",
     a: "Book through our online form, or contact us directly by phone or email. Our team responds promptly to confirm your appointment.",
   },
-  { q: "What areas of law do you handle?", a: "" },
-  { q: "Do you offer free initial consultations?", a: "" },
-  { q: "How long does a legal matter usually take?", a: "" },
-  { q: "What are your legal fees and pricing structure?", a: "" },
+  {
+    q: "What areas of law do you handle?",
+    a: "We advise across eight practice areas: Intellectual Property, Employment Law, Insurance Law, Immigration Law, Conveyancing Law, Tax Law, Commercial Law and Corporate Law. If you're unsure which fits your matter, tell us what's going on and we'll point you the right way.",
+  },
+  {
+    q: "Do you offer free initial consultations?",
+    a: "Yes. Our first consultation is free and confidential, so you can explain your situation and understand your options before committing to anything.",
+  },
+  {
+    q: "How long does a legal matter usually take?",
+    a: "It depends on the type and complexity of the matter — a straightforward conveyance can close in days, while a contested dispute can take longer. We'll give you a realistic timeline once we've reviewed the details of your case.",
+  },
+  {
+    q: "What are your legal fees and pricing structure?",
+    a: "Fees vary by the type and scope of the matter. We agree the structure with you upfront — before any work begins — so there are no surprises.",
+  },
 ];
 
 export const contact = {

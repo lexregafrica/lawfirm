@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export type AccordionEntry = {
   title: string;
@@ -32,9 +33,24 @@ export default function Accordion({
             aria-expanded={open === i}
           >
             <span>{item.title}</span>
-            <span>{open === i ? "−" : "+"}</span>
+            <motion.span animate={{ rotate: open === i ? 45 : 0 }} transition={{ duration: 0.25 }}>
+              +
+            </motion.span>
           </button>
-          {open === i && item.body && <div className={bodyClass}>{item.body}</div>}
+          <AnimatePresence initial={false}>
+            {open === i && item.body && (
+              <motion.div
+                key="body"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                style={{ overflow: "hidden" }}
+              >
+                <div className={bodyClass}>{item.body}</div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       ))}
     </>
