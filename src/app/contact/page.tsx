@@ -28,7 +28,7 @@ export default function ContactPage() {
             <div className="eyebrow">Reach us directly</div>
             <div className="reach-list">
               <div className="reach-item">
-                <div className="reach-icon">📞</div>
+                <div className="reach-icon">✦</div>
                 <div>
                   <h4>Call us</h4>
                   <p>{contact.phone}</p>
@@ -36,14 +36,14 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="reach-item">
-                <div className="reach-icon">✉</div>
+                <div className="reach-icon">✦</div>
                 <div>
                   <h4>Email us</h4>
                   <p>{contact.email}</p>
                 </div>
               </div>
               <div className="reach-item">
-                <div className="reach-icon">📍</div>
+                <div className="reach-icon">✦</div>
                 <div>
                   <h4>Visit us</h4>
                   <p>{contact.address}</p>
