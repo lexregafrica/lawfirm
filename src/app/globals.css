@@ -92,8 +92,8 @@ h3 {
   cursor: pointer;
 }
 .btn::before {
-  content: "●";
-  font-size: 10px;
+  content: "✦";
+  font-size: 12px;
 }
 .btn-outline {
   display: inline-flex;
@@ -149,18 +149,6 @@ header {
   font-family: var(--font-libre-caslon), serif;
   font-size: 22px;
   color: var(--ink);
-}
-.logo-mark {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-size: 14px;
-  font-weight: 700;
 }
 nav {
   display: flex;

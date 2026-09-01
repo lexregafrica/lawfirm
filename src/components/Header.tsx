@@ -18,7 +18,7 @@ export default function Header({ active = "/" }: { active?: string }) {
     <header>
       <div className={`header-inner${open ? " menu-open" : ""}`}>
         <Link href="/" className="logo" onClick={() => setOpen(false)}>
-          <span className="logo-mark">A</span> Adede &amp; Co
+          Adede &amp; Co
         </Link>
         <nav>
           {navLinks.map((link) => (

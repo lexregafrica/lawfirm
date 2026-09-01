@@ -23,9 +23,10 @@ export default function Hero() {
               Free Consultation
             </Link>
             <div className="badge">
-              <span style={{ fontSize: 20 }}>⚖</span>
               <div>
-                <b>2012–2026</b>
+                <b>
+                  <span style={{ fontSize: 15 }}>⚖</span> 2012–2026
+                </b>
                 Serving Nairobi &amp; beyond
               </div>
             </div>

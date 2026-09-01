@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-top">
           <div>
             <Link href="/" className="logo" style={{ marginBottom: 20 }}>
-              <span className="logo-mark">A</span> Adede &amp; Co
+              Adede &amp; Co
             </Link>
             <h2>
               Breaking down the law <span className="accent">for everyday use.</span>
