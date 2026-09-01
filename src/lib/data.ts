@@ -72,6 +72,7 @@ export const testimonials = [
     name: "J.M. Karuri",
     role: "Client",
     initials: "JK",
+    rating: 5,
   },
   {
     quote:
@@ -79,6 +80,7 @@ export const testimonials = [
     name: "Ram Riftin",
     role: "Director Finance, On Track (E.A.) Ltd",
     initials: "RR",
+    rating: 5,
   },
 ];
 

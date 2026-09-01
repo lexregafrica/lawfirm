@@ -34,6 +34,11 @@ export default function Footer() {
             <p>{contact.address}</p>
             <p>{contact.postal}</p>
           </div>
+          <div className="footer-col">
+            <h5>Legal</h5>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
+          </div>
         </div>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} Adede &amp; Co Advocates. All Rights Reserved.</span>

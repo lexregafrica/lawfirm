@@ -1,19 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PersonIcon, DocumentIcon, ChatIcon } from "./icons";
 
 const values = [
   {
-    icon: "👤",
+    icon: <PersonIcon />,
     title: "Client-first philosophy",
     desc: "Every strategy is built around your specific goals, timeline and budget.",
   },
   {
-    icon: "📄",
+    icon: <DocumentIcon />,
     title: "Sector-tested experience",
     desc: "Corporate insurance-sector background brings global best practice into local advice.",
   },
   {
-    icon: "💬",
+    icon: <ChatIcon />,
     title: "Transparent communication",
     desc: "Clear guidance and honest advice, even in complex or difficult situations.",
   },
