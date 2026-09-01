@@ -8,8 +8,8 @@ export default function Hero() {
       <Ticker />
       <div className="hero-media">
         <Image
-          src="/images/about-lawyer-signing.jpeg"
-          alt="Advocate reviewing documents"
+          src="/images/hero-gavel.jpg"
+          alt="Judge's gavel"
           fill
           priority
           sizes="100vw"
