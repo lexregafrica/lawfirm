@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { contact } from "@/lib/data";
 
@@ -7,8 +8,8 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-top">
           <div>
-            <Link href="/" className="logo" style={{ marginBottom: 20 }}>
-              Adede &amp; Co
+            <Link href="/" className="logo logo-on-dark" style={{ marginBottom: 20 }}>
+              <Image src="/images/logo.png" alt="Adede & Co Advocates" width={158} height={112} className="logo-img" />
             </Link>
             <h2>
               Breaking down the law <span className="accent">for everyday use.</span>

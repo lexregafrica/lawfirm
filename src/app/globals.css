@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f8f6f3;
-  --accent: #f2984a;
-  --ink: #4d270e;
-  --ink-soft: rgba(77, 39, 14, 0.7);
-  --dark: #3a1d0b;
+  --bg: #f7f7f7;
+  --accent: #6b6b6e;
+  --ink: #1a1a1a;
+  --ink-soft: rgba(26, 26, 26, 0.65);
+  --dark: #141414;
   --white: #ffffff;
   --radius: 16px;
   --radius-lg: 24px;
@@ -82,8 +82,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--accent);
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
   font-weight: 400;
   font-size: 15px;
   padding: 14px 26px;
@@ -126,7 +126,7 @@ header {
   margin: 0 auto;
   background: var(--white);
   border-radius: 999px;
-  box-shadow: 0 2px 16px rgba(77, 39, 14, 0.06);
+  box-shadow: 0 2px 16px rgba(26, 26, 26, 0.06);
   z-index: 47;
 }
 .logo {
@@ -136,6 +136,13 @@ header {
   font-family: var(--font-libre-caslon), serif;
   font-size: 22px;
   color: var(--ink);
+}
+.logo-img {
+  height: 52px;
+  width: auto;
+}
+.logo-on-dark .logo-img {
+  filter: invert(1);
 }
 nav {
   display: flex;
@@ -174,7 +181,7 @@ nav a.active {
 .mobile-menu-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(58, 29, 11, 0.35);
+  background: rgba(20, 20, 20, 0.35);
   backdrop-filter: blur(2px);
   z-index: 45;
 }
@@ -186,7 +193,7 @@ nav a.active {
   margin-top: 12px;
   background: var(--white);
   border-radius: 24px;
-  box-shadow: 0 12px 40px rgba(77, 39, 14, 0.15);
+  box-shadow: 0 12px 40px rgba(26, 26, 26, 0.15);
   padding: 12px;
   z-index: 46;
   overflow: hidden;
@@ -215,7 +222,7 @@ nav a.active {
   padding: 32px 0 60px;
 }
 .ticker {
-  background: rgba(77, 39, 14, 0.05);
+  background: rgba(26, 26, 26, 0.05);
   border-radius: 999px;
   padding: 12px 0;
   font-size: 13px;
@@ -264,8 +271,8 @@ nav a.active {
     to top,
     var(--bg) 0%,
     var(--bg) 32%,
-    rgba(248, 246, 243, 0.88) 44%,
-    rgba(248, 246, 243, 0.35) 62%,
+    rgba(247, 247, 247, 0.88) 44%,
+    rgba(247, 247, 247, 0.35) 62%,
     transparent 78%
   );
   z-index: 1;
@@ -329,7 +336,7 @@ nav a.active {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--bg) 0%, var(--bg) 22%, rgba(248, 246, 243, 0.85) 34%, transparent 62%);
+  background: linear-gradient(to top, var(--bg) 0%, var(--bg) 22%, rgba(247, 247, 247, 0.85) 34%, transparent 62%);
   z-index: 1;
 }
 .service-card .body {
@@ -384,7 +391,7 @@ nav a.active {
   font-size: 15px;
   font-weight: 400;
   color: var(--ink);
-  box-shadow: 0 2px 10px rgba(77, 39, 14, 0.05);
+  box-shadow: 0 2px 10px rgba(26, 26, 26, 0.05);
   white-space: nowrap;
 }
 .pill-tag .icon {
@@ -411,9 +418,9 @@ nav a.active {
   box-shadow:
     0 0 0 18px var(--bg),
     0 0 40px 40px var(--bg),
-    0 0 0 1px rgba(77, 39, 14, 0.08),
-    0 0 0 19px rgba(77, 39, 14, 0.06),
-    0 0 0 38px rgba(77, 39, 14, 0.04);
+    0 0 0 1px rgba(26, 26, 26, 0.08),
+    0 0 0 19px rgba(26, 26, 26, 0.06),
+    0 0 0 38px rgba(26, 26, 26, 0.04);
   z-index: 2;
   gap: 14px;
 }
@@ -455,7 +462,7 @@ nav a.active {
   transform: translateX(-50%);
   font-family: var(--font-libre-caslon), serif;
   font-size: 160px;
-  color: rgba(77, 39, 14, 0.05);
+  color: rgba(26, 26, 26, 0.05);
   white-space: nowrap;
   z-index: 0;
 }
@@ -495,7 +502,7 @@ nav a.active {
   font-family: var(--font-libre-caslon), serif;
   font-size: 96px;
   line-height: 1;
-  background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 20%, rgba(242, 152, 74, 0.15) 65%);
+  background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 20%, rgba(107, 107, 110, 0.15) 65%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -550,7 +557,7 @@ nav a.active {
   padding-bottom: 4px;
 }
 .testi-card {
-  background: rgb(241, 238, 235);
+  background: rgb(236, 236, 236);
   border-radius: 16px;
   padding: 28px;
   min-width: 280px;
@@ -607,7 +614,7 @@ nav a.active {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgba(77, 39, 14, 0.15);
+  background: rgba(26, 26, 26, 0.15);
 }
 .testi-dots span.active {
   background: var(--ink);
@@ -634,7 +641,7 @@ nav a.active {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--bg) 0%, var(--bg) 20%, rgba(248, 246, 243, 0.85) 34%, transparent 60%);
+  background: linear-gradient(to top, var(--bg) 0%, var(--bg) 20%, rgba(247, 247, 247, 0.85) 34%, transparent 60%);
   z-index: 1;
 }
 .about-caption {
@@ -658,11 +665,11 @@ nav a.active {
   margin-bottom: 28px;
 }
 .accordion-item {
-  border-top: 1px solid rgba(77, 39, 14, 0.12);
+  border-top: 1px solid rgba(26, 26, 26, 0.12);
   padding: 20px 0;
 }
 .accordion-item:last-child {
-  border-bottom: 1px solid rgba(77, 39, 14, 0.12);
+  border-bottom: 1px solid rgba(26, 26, 26, 0.12);
 }
 .accordion-head {
   display: flex;
@@ -704,7 +711,7 @@ nav a.active {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(to top, var(--bg) 0%, var(--bg) 30%, rgba(248, 246, 243, 0.55) 48%, transparent 78%);
+  background: linear-gradient(to top, var(--bg) 0%, var(--bg) 30%, rgba(247, 247, 247, 0.55) 48%, transparent 78%);
 }
 .values-banner-overlay {
   position: absolute;
@@ -756,7 +763,7 @@ nav a.active {
   padding: 10px 10px 10px 28px;
   max-width: 480px;
   margin: 0 auto;
-  box-shadow: 0 2px 16px rgba(77, 39, 14, 0.06);
+  box-shadow: 0 2px 16px rgba(26, 26, 26, 0.06);
 }
 .pill-callout-left {
   display: flex;
@@ -785,7 +792,7 @@ nav a.active {
 .process-item b {
   font-family: var(--font-libre-caslon), serif;
   font-size: 56px;
-  color: rgba(242, 152, 74, 0.35);
+  color: rgba(107, 107, 110, 0.35);
   display: block;
   margin-bottom: 12px;
 }
@@ -840,7 +847,7 @@ nav a.active {
   font-weight: 400;
 }
 .contact-form-frame {
-  background: rgb(241, 238, 235);
+  background: rgb(236, 236, 236);
   border-radius: 20px;
   padding: 16px 10px 10px;
 }
@@ -877,7 +884,7 @@ nav a.active {
 .field input,
 .field select,
 .field textarea {
-  border: 1px solid rgba(77, 39, 14, 0.15);
+  border: 1px solid rgba(26, 26, 26, 0.15);
   border-radius: 10px;
   padding: 12px 14px;
   font-family: var(--font-inter), sans-serif;
@@ -907,11 +914,11 @@ nav a.active {
   margin-bottom: 20px;
 }
 .faq-item {
-  border-top: 1px solid rgba(77, 39, 14, 0.12);
+  border-top: 1px solid rgba(26, 26, 26, 0.12);
   padding: 18px 0;
 }
 .faq-item:last-child {
-  border-bottom: 1px solid rgba(77, 39, 14, 0.12);
+  border-bottom: 1px solid rgba(26, 26, 26, 0.12);
 }
 .faq-q {
   display: flex;
@@ -1018,7 +1025,7 @@ footer {
   margin-top: 48px;
 }
 .page-hero .stat-row .stat b {
-  background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 20%, rgba(242, 152, 74, 0.15) 65%);
+  background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 20%, rgba(107, 107, 110, 0.15) 65%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1082,7 +1089,7 @@ footer {
   display: flex;
   gap: 12px;
   padding: 12px 0;
-  border-top: 1px solid rgba(77, 39, 14, 0.12);
+  border-top: 1px solid rgba(26, 26, 26, 0.12);
   font-size: 13px;
 }
 .founder-qual-item:first-of-type {
@@ -1164,7 +1171,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(58, 29, 11, 0.6);
+  background: rgba(20, 20, 20, 0.6);
   z-index: 1;
 }
 .cta-banner-inner {
@@ -1232,7 +1239,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--accent);
-  background: rgba(242, 152, 74, 0.12);
+  background: rgba(107, 107, 110, 0.12);
   padding: 4px 10px;
   border-radius: 999px;
   margin-bottom: 16px;
@@ -1269,7 +1276,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(242, 152, 74, 0.12);
+  background: rgba(107, 107, 110, 0.12);
   color: var(--accent);
   display: flex;
   align-items: center;

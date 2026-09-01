@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -18,7 +19,7 @@ export default function Header({ active = "/" }: { active?: string }) {
     <header>
       <div className={`header-inner${open ? " menu-open" : ""}`}>
         <Link href="/" className="logo" onClick={() => setOpen(false)}>
-          Adede &amp; Co
+          <Image src="/images/logo.png" alt="Adede & Co Advocates" width={158} height={112} className="logo-img" priority />
         </Link>
         <nav>
           {navLinks.map((link) => (
