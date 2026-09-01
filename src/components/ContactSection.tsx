@@ -5,7 +5,7 @@ export default function ContactSection() {
   return (
     <section className="contact-section">
       <div className="contact-media">
-        <Image src="/images/insurance-law.jpeg" alt="Contact Adede & Co Advocates" fill sizes="(max-width: 1024px) 100vw, 50vw" />
+        <Image src="/images/contact-bg.jpg" alt="Contact Adede & Co Advocates" fill sizes="(max-width: 1024px) 100vw, 50vw" />
         <div className="contact-media-overlay">
           <div>
             <span>Call us</span>

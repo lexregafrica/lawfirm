@@ -23,7 +23,7 @@ export default function ValuesSection() {
   return (
     <div className="values-section">
       <div className="values-banner">
-        <Image src="/images/immigration-law.jpeg" alt="Fight for you" fill sizes="100vw" />
+        <Image src="/images/values-banner.jpg" alt="Fight for you" fill sizes="100vw" />
         <div className="values-banner-overlay">
           <h2>
             Fight back. Win

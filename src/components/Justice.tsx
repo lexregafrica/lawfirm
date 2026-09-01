@@ -9,7 +9,7 @@ export default function Justice() {
           The Adede Way
         </div>
         <div className="justice-portrait">
-          <Image src="/images/justice-scales-studio.jpeg" alt="Scales of justice" fill sizes="64px" />
+          <Image src="/images/justice-statue.jpg" alt="Scales of justice" fill sizes="64px" />
         </div>
         <h2>
           Holistic counsel, <span className="accent">client-centric</span> results

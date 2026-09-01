@@ -21,7 +21,7 @@ export default function AboutFirm() {
     <section className="about-firm">
       <div>
         <div className="img-wrap">
-          <Image src="/images/hero-handshake.jpeg" alt="About the firm" fill sizes="(max-width: 1024px) 100vw, 45vw" />
+          <Image src="/images/about-caption.jpg" alt="About the firm" fill sizes="(max-width: 1024px) 100vw, 45vw" />
           <div className="about-caption">
             <h3>
               Built on <span className="accent">trust</span> and <span className="accent">clarity</span>

@@ -97,7 +97,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="founder-photo">
-            <Image src="/images/about-lawyer-signing.jpeg" alt="Charles Adede Owinyo" fill sizes="(max-width: 1024px) 100vw, 30vw" />
+            <Image src="/images/founder-photo.jpg" alt="Charles Adede Owinyo" fill sizes="(max-width: 1024px) 100vw, 30vw" />
           </div>
           <div className="founder-quals">
             <h4>Qualifications</h4>
@@ -128,7 +128,7 @@ export default function AboutPage() {
               ))}
             </div>
             <div className="stand-for-center">
-              <Image src="/images/justice-scales-studio.jpeg" alt="Scales of justice" fill sizes="260px" />
+              <Image src="/images/justice-statue.jpg" alt="Scales of justice" fill sizes="260px" />
             </div>
             <div className="stand-for-col">
               {standFor.slice(2, 4).map((item) => (
@@ -143,7 +143,7 @@ export default function AboutPage() {
         </section>
 
         <CtaBanner
-          image="/images/hero-handshake.jpeg"
+          image="/images/cta-library.jpg"
           title="Begin your journey to resolution with us"
           subtitle="Tell us about your situation and we'll connect you with the right advocate — no obligation, fully confidential."
         />
