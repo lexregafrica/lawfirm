@@ -9,8 +9,8 @@
   --accent: #9a958a;
   --white: #ffffff;
   --hairline: rgba(243, 241, 236, 0.14);
-  --radius: 16px;
-  --radius-lg: 24px;
+  --radius: 0px;
+  --radius-lg: 0px;
 }
 
 @theme inline {
@@ -201,7 +201,7 @@ nav a.active {
   background: var(--surface);
   border: 1px solid var(--hairline);
   border-top: none;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
   padding: 12px;
   z-index: 46;
@@ -211,7 +211,7 @@ nav a.active {
   display: block;
   padding: 14px 16px;
   font-size: 17px;
-  border-radius: 14px;
+  border-radius: 0;
   color: var(--ink);
 }
 .mobile-menu-panel a.active {
@@ -232,7 +232,7 @@ nav a.active {
 }
 .ticker {
   background: rgba(243, 241, 236, 0.06);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 12px 0;
   font-size: 13px;
   color: var(--ink-soft);
@@ -399,7 +399,7 @@ nav a.active {
   gap: 10px;
   background: var(--surface);
   border: 1px solid var(--hairline);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 14px 22px 14px 14px;
   font-size: 15px;
   font-weight: 400;
@@ -572,7 +572,7 @@ nav a.active {
 .testi-card {
   background: var(--bg);
   border: 1px solid var(--hairline);
-  border-radius: 16px;
+  border-radius: 0;
   padding: 28px;
   min-width: 280px;
   flex: 1;
@@ -715,7 +715,7 @@ nav a.active {
 .values-banner {
   position: relative;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 0;
   height: 640px;
   border: 1px solid var(--hairline);
 }
@@ -776,7 +776,7 @@ nav a.active {
   gap: 20px;
   background: var(--surface);
   border: 1px solid var(--hairline);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 10px 10px 10px 28px;
   max-width: 480px;
   margin: 0 auto;
@@ -831,7 +831,7 @@ nav a.active {
 }
 .contact-media {
   position: relative;
-  border-radius: 24px;
+  border-radius: 0;
   overflow: hidden;
   min-height: 680px;
   border: 1px solid var(--hairline);
@@ -866,7 +866,7 @@ nav a.active {
 .contact-form-frame {
   background: var(--dark);
   border: 1px solid var(--hairline);
-  border-radius: 20px;
+  border-radius: 0;
   padding: 16px 10px 10px;
 }
 .contact-form-frame .eyebrow {
@@ -877,7 +877,7 @@ nav a.active {
 .contact-form {
   background: var(--surface);
   border: 1px solid var(--hairline);
-  border-radius: 14px;
+  border-radius: 0;
   padding: 40px;
 }
 .contact-form h3 {
@@ -904,7 +904,7 @@ nav a.active {
 .field select,
 .field textarea {
   border: 1px solid var(--hairline);
-  border-radius: 10px;
+  border-radius: 0;
   padding: 12px 14px;
   font-family: var(--font-inter), sans-serif;
   font-size: 13px;
@@ -1267,7 +1267,7 @@ footer {
   color: var(--accent);
   background: rgba(154, 149, 138, 0.14);
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: 0;
   margin-bottom: 16px;
 }
 .office-card h4 {
@@ -1474,7 +1474,7 @@ footer {
     flex-direction: column;
     align-items: stretch;
     padding: 16px;
-    border-radius: 20px;
+    border-radius: 0;
   }
   .pill-callout .btn-outline {
     justify-content: center;
