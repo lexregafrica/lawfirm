@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-top">
           <div>
-            <Link href="/" className="logo logo-on-dark" style={{ marginBottom: 20 }}>
+            <Link href="/" className="logo" style={{ marginBottom: 20 }}>
               <Image src="/images/logo.png" alt="Adede & Co Advocates" width={158} height={112} className="logo-img" />
             </Link>
             <h2>
